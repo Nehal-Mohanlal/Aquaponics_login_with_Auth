@@ -5,14 +5,11 @@
             |
             <router-link v-if="$auth.isAuthenticated" to="/about">About</router-link>
             <div v-if="!$auth.loading">
-                |
+                
                 <button @click="login" v-if="!$auth.isAuthenticated">
                     Login
                 </button>
-                |
-                <button @click="loginPopup" v-if="!$auth.isAuthenticated">
-                    Login Popup
-                </button>
+               
                 |
                 <button @click="logout" v-if="$auth.isAuthenticated">
                     Logout
