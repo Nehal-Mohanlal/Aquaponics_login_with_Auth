@@ -9,7 +9,6 @@
                 <button @click="login" v-if="!$auth.isAuthenticated">
                     Login
                 </button>
-               
                 |
                 <button @click="logout" v-if="$auth.isAuthenticated">
                     Logout
